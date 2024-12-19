@@ -133,8 +133,6 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
       String(wranglerPort),
       '--proxy',
       String(port),
-      '--persist-to',
-      path.join(functionsRoot, '.wrangler/state'),
       ...bindings
     ];
 
